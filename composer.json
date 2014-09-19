@@ -1,0 +1,12 @@
+{
+    "name": "adult/design_pattern_on_php",
+    "description":" ",
+    "keywords":[
+    ],
+    "config":{
+        "bin-dir": "bin"
+    },
+    "require": {
+        "satooshi/php-coveralls": "*"
+    }
+}
