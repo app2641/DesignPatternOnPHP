@@ -25,7 +25,7 @@ class ItemDao
      */
     private function __construct ()
     {
-        $fp = fopen(ROOT.'/data/facade/item.csv', 'r');
+        $fp = fopen(ROOT.'/data/Facade/item.csv', 'r');
         while ($data = fgetcsv($fp, 1000, ',')) {
             $item = new Item();
             $item->setId($data[0]);
