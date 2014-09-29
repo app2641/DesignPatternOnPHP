@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<data>
+    <entry>
+        <title>item1</title>
+        <url>https://google.com</url>
+        <date>2014/09/29</date>
+    </entry>
+
+    <entry>
+        <title>item2</title>
+        <url>https://developer.android.com</url>
+        <date>2014/09/29</date>
+    </entry>
+</data>
