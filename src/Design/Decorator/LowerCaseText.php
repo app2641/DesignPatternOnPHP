@@ -3,7 +3,7 @@
 
 namespace Design\Decorator;
 
-class DoubleByteText extends TextDecorator
+class LowerCaseText extends TextDecorator
 {
 
     /**
@@ -13,14 +13,14 @@ class DoubleByteText extends TextDecorator
 
 
     /**
-     * テキストを全角文字にして返す
+     * テキストを小文字にして返す
      *
      * @return string
      **/
     public function getText ()
     {
         $text = parent::getText();
-        return mb_convert_kana($text, 'RANSKV');
+        return strtolower($text);
     }
 }
 

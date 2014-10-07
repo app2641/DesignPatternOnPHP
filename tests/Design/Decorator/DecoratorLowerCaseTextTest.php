@@ -1,10 +1,10 @@
 <?php
 
 
-use Design\Decorator\DoubleByteText;
+use Design\Decorator\LowerCaseText;
 use Design\Decorator\PlainText;
 
-class DecoratorDoubleByteText extends PHPUnit_Framework_TestCase
+class DecoratorLowerCaseText extends PHPUnit_Framework_TestCase
 {
 
     /**
@@ -17,8 +17,8 @@ class DecoratorDoubleByteText extends PHPUnit_Framework_TestCase
     public function テキストを指定していない場合 ()
     {
         $plain = new PlainText();
-        $double = new DoubleByteText($plain);
-        $double->getText();
+        $lower = new LowerCaseText($plain);
+        $lower->getText();
     }
 
 
@@ -30,10 +30,10 @@ class DecoratorDoubleByteText extends PHPUnit_Framework_TestCase
     public function テキストの取得 ()
     {
         $plain = new PlainText();
-        $double = new DoubleByteText($plain);
+        $lower = new LowerCaseText($plain);
 
-        $double->setText('foo');
-        $this->assertEquals('ｆｏｏ', $double->getText());
+        $lower->setText('FOO');
+        $this->assertEquals('foo', $lower->getText());
     }
 }
 
